@@ -1,0 +1,95 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# ACKO AI Native Insurance Platform — .gitignore
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual Environments ─────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+.env
+*.env
+
+# ── Secrets ──────────────────────────────────────────────────────────────────
+.env.local
+.env.production
+secrets.json
+credentials.json
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+src/logs/
+logs/
+*.log
+*.log.*
+
+# ── Saved Models ─────────────────────────────────────────────────────────────
+saved_models/
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+
+# ── Jupyter / IPython ────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*.nbconvert
+
+# ── Build Artifacts ──────────────────────────────────────────────────────────
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# ── IDE ──────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS ───────────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── Testing ──────────────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+coverage.xml
+
+# ── Streamlit ────────────────────────────────────────────────────────────────
+.streamlit/secrets.toml
+
+# ── ChromaDB ─────────────────────────────────────────────────────────────────
+chroma_db/
+*.chroma
+
+# ── Temporary / Cache ────────────────────────────────────────────────────────
+tmp/
+temp/
+.cache/
+*.tmp
+*.bak
+*.swp
+
+# ── Dataset Files (large; tracked separately via DVC or Git LFS) ─────────────
+# DataSet/
+# *.csv
+# *.parquet
